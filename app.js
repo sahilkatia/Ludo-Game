@@ -43,7 +43,7 @@ scores[activePlayer] += roundScore;
 document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
 // Check if player won the game
 
-if (scores[activePlayer] >= 100){
+if (scores[activePlayer] >= 15){
 document.querySelector('#name-' + activePlayer).textContent = 'Winner Hurray!';
 document.querySelector('.dice').style.display = 'none';
 document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
@@ -55,8 +55,6 @@ else{
 	nextPlayer();
 }
 
-// Next Player
-nextPlayer();
 }
 });                                                                         
 
